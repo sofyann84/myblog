@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
 const useStyles = makeStyles(() => ({
-    root: { maxwidth: 365, height: 360,display:'flex',flexDirection:'column' ,marginTop:'20px',},
+    root: { maxwidth: 365, height: 360,display:'flex',flexDirection:'column' ,marginTop:'40px',},
     title:{
 width:"100%",
 height:'40%',
@@ -25,7 +25,7 @@ fontSize : '1rem'
 
     action:{
         width:"100%",
-        height:'10%'
+        height:'100%'
     },
 
     media: {

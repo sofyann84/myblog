@@ -25,8 +25,8 @@ export default function footer() {
 
     <footer className={classes.footer}>
 
-      <p>
-        Created by <strong>Sofyan</strong> &copy; Copyright 2021
+     <p>
+        Created by <strong>Sofyan Nugraha</strong> &copy; Copyright 2021
     </p>
     </footer>
   );

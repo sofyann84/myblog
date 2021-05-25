@@ -33,7 +33,7 @@ export default function Home() {
     useEffect(() => {
         dispatch(loadPosts(pagination.current));
     }, [dispatch, pagination]);
-    console.log(data)
+  
     const _handleOnPagination = (e) => {
         const { innerText } = e.target;
         if (innerText === "Prev") {
@@ -54,6 +54,8 @@ export default function Home() {
         < Container maxWidth="lg">
             <Grid container spacing={3}>
                 {data.map(({ title, body, id }, i) => {
+                    
+                    
                     return (
                         <Grid item xs={8} sm={4} key={i}>
                             <HomeItem url="https://source.unsplash.com/featured/?city" title={title} body={body} id={id} />

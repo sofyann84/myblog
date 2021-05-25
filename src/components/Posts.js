@@ -20,9 +20,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: '20px',
+    marginBottom: '2px',
     '& > *': {
-      marginTop: theme.spacing(2),
+      marginTop: theme.spacing(4),
     },
   },
 }));
@@ -97,17 +97,20 @@ export default function Component() {
 
   const newData = data.map((item) => {
     const action = (
-      <div className="actions">
+      <div className="actions" >
+
         <Link to={`/post-detail/${item.id}`}>
           <button className="actions__btn">
             <VisibilityIcon />
           </button>
         </Link>
+
         <Link to={`/newpost/edit/${item.id}`}>
           <button className="actions__btn">
             <EditIcon />
           </button>
         </Link>
+
         <button className="actions__btn" onClick={() => toggle(item.id)}>
           <DeleteIcon />
         </button>
@@ -128,13 +131,16 @@ export default function Component() {
   return (
     < Container maxWidth="lg">
       <div className="page-title">
+        <br></br>
+        <br></br>
         <h4>List of Posts</h4>
+        <br></br>
       </div>
 
       <Modal isOpen={modal.isActive}>
         {isDeleted || isPostSubmitted || isPostUpdated ? (
           <>
-            <CheckCircleOutlineIcon size=""/>
+            <CheckCircleOutlineIcon size="" />
             <p>
               {isDeleted
                 ? "Deleted!"
@@ -168,7 +174,7 @@ export default function Component() {
 
       <DataTable columns={columns} data={newData} />
       <div className={classes.root}>
-        <PaginationView count={Math.ceil(totalData / 9)} variant="outlined" color="primary" onClick={_handleOnPagination} />
+        <PaginationView count={Math.ceil(totalData / 9)} variant="outlined" color="default" onClick={_handleOnPagination} />
       </div></Container>
   );
 }

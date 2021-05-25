@@ -52,8 +52,7 @@ export const loadPostsList = (page) => {
         dispatch(loadPostsListSuccess(data.posts));
       })
       .catch((err) => {
-        console.log(err);
-        dispatch(loadPostsListFailure());
+       dispatch(loadPostsListFailure());
       })
       .finally(() => {
         dispatch(isLoading(false));

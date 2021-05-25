@@ -1,11 +1,25 @@
-first :
-git clone the project
+# HOW TO VIEW MYBLOG APP
 
-second :
-npm install
-the purpose is to install the package of this project
 
-third :
-npm start
+#first :
+git clone the project using this command
 
-will open http://localhost:3000 in the browser.
+** git clone git@github.com:sofyann84/myblog.git **
+
+#second :
+
+install node modules and dependency packets with :
+** cd myblog **
+** npm install ** 
+
+#third :
+start the app with this command 
+
+** npm start **
+
+will open automatically, usually with port 3000 if it didn't use
+
+http://localhost:3000 in the browser.
+
+
+
